@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185355E11A9EF472001E4BB3 /* LocationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 185355E01A9EF472001E4BB3 /* LocationDetailViewController.m */; };
+		185355E31A9F0226001E4BB3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 185355E21A9F0226001E4BB3 /* Default-568h@2x.png */; };
 		5669C0EF154FC64F0092D780 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669C0EE154FC64F0092D780 /* UIKit.framework */; };
 		5669C0F1154FC64F0092D780 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669C0F0154FC64F0092D780 /* Foundation.framework */; };
 		5669C0F3154FC64F0092D780 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669C0F2154FC64F0092D780 /* CoreGraphics.framework */; };
@@ -15,22 +17,32 @@
 		5669C0FF154FC64F0092D780 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C0FE154FC64F0092D780 /* AppDelegate.m */; };
 		5669C102154FC64F0092D780 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5669C100154FC64F0092D780 /* MainStoryboard.storyboard */; };
 		5669C105154FC64F0092D780 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5669C104154FC64F0092D780 /* ViewController.m */; };
+		5669C110154FCA6D0092D780 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669C10F154FCA6D0092D780 /* MapKit.framework */; };
+		5669C112154FCA770092D780 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5669C111154FCA770092D780 /* CoreLocation.framework */; };
+		56E5594A15569D4D00C1177A /* MapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 56E5594915569D4D00C1177A /* MapPoint.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185355DF1A9EF472001E4BB3 /* LocationDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailViewController.h; sourceTree = "<group>"; };
+		185355E01A9EF472001E4BB3 /* LocationDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailViewController.m; sourceTree = "<group>"; };
+		185355E21A9F0226001E4BB3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5669C0EA154FC64F0092D780 /* GooglePlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GooglePlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5669C0EE154FC64F0092D780 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5669C0F0154FC64F0092D780 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5669C0F2154FC64F0092D780 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5669C0F6154FC64F0092D780 /* GooglePlaces-Info.plist */ = {isa = PBXFileReference; path = "GooglePlaces-Info.plist"; sourceTree = "<group>"; };
+		5669C0F6154FC64F0092D780 /* GooglePlaces-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GooglePlaces-Info.plist"; sourceTree = "<group>"; };
 		5669C0F8154FC64F0092D780 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5669C0FA154FC64F0092D780 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5669C0FC154FC64F0092D780 /* GooglePlaces-Prefix.pch */ = {isa = PBXFileReference; path = "GooglePlaces-Prefix.pch"; sourceTree = "<group>"; };
-		5669C0FD154FC64F0092D780 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		5669C0FC154FC64F0092D780 /* GooglePlaces-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GooglePlaces-Prefix.pch"; sourceTree = "<group>"; };
+		5669C0FD154FC64F0092D780 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5669C0FE154FC64F0092D780 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5669C101154FC64F0092D780 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		5669C103154FC64F0092D780 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		5669C103154FC64F0092D780 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5669C104154FC64F0092D780 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5669C10F154FCA6D0092D780 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5669C111154FCA770092D780 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		56E5594815569D4D00C1177A /* MapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoint.h; sourceTree = "<group>"; };
+		56E5594915569D4D00C1177A /* MapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoint.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5669C112154FCA770092D780 /* CoreLocation.framework in Frameworks */,
+				5669C110154FCA6D0092D780 /* MapKit.framework in Frameworks */,
 				5669C0EF154FC64F0092D780 /* UIKit.framework in Frameworks */,
 				5669C0F1154FC64F0092D780 /* Foundation.framework in Frameworks */,
 				5669C0F3154FC64F0092D780 /* CoreGraphics.framework in Frameworks */,
@@ -50,6 +64,9 @@
 		5669C0DF154FC64F0092D780 = {
 			isa = PBXGroup;
 			children = (
+				185355E21A9F0226001E4BB3 /* Default-568h@2x.png */,
+				5669C111154FCA770092D780 /* CoreLocation.framework */,
+				5669C10F154FCA6D0092D780 /* MapKit.framework */,
 				5669C0F4154FC64F0092D780 /* GooglePlaces */,
 				5669C0ED154FC64F0092D780 /* Frameworks */,
 				5669C0EB154FC64F0092D780 /* Products */,
@@ -82,6 +99,10 @@
 				5669C100154FC64F0092D780 /* MainStoryboard.storyboard */,
 				5669C103154FC64F0092D780 /* ViewController.h */,
 				5669C104154FC64F0092D780 /* ViewController.m */,
+				56E5594815569D4D00C1177A /* MapPoint.h */,
+				56E5594915569D4D00C1177A /* MapPoint.m */,
+				185355DF1A9EF472001E4BB3 /* LocationDetailViewController.h */,
+				185355E01A9EF472001E4BB3 /* LocationDetailViewController.m */,
 				5669C0F5154FC64F0092D780 /* Supporting Files */,
 			);
 			path = GooglePlaces;
@@ -124,7 +145,7 @@
 		5669C0E1154FC64F0092D780 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0610;
 			};
 			buildConfigurationList = 5669C0E4154FC64F0092D780 /* Build configuration list for PBXProject "GooglePlaces" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -150,6 +171,7 @@
 			files = (
 				5669C0F9154FC64F0092D780 /* InfoPlist.strings in Resources */,
 				5669C102154FC64F0092D780 /* MainStoryboard.storyboard in Resources */,
+				185355E31A9F0226001E4BB3 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,9 +182,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185355E11A9EF472001E4BB3 /* LocationDetailViewController.m in Sources */,
 				5669C0FB154FC64F0092D780 /* main.m in Sources */,
 				5669C0FF154FC64F0092D780 /* AppDelegate.m in Sources */,
 				5669C105154FC64F0092D780 /* ViewController.m in Sources */,
+				56E5594A15569D4D00C1177A /* MapPoint.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,10 +216,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Murray Hall (UB984TT486)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Murray Hall (UB984TT486)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -205,10 +237,15 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "c53db53e-bb18-4e35-8474-f05e4ebdc567";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -217,17 +254,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Murray Hall (UB984TT486)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Murray Hall (UB984TT486)";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "c53db53e-bb18-4e35-8474-f05e4ebdc567";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -236,10 +285,12 @@
 		5669C109154FC64F0092D780 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Murray Hall (UB984TT486)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GooglePlaces/GooglePlaces-Prefix.pch";
 				INFOPLIST_FILE = "GooglePlaces/GooglePlaces-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c53db53e-bb18-4e35-8474-f05e4ebdc567";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -247,10 +298,12 @@
 		5669C10A154FC64F0092D780 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Murray Hall (UB984TT486)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GooglePlaces/GooglePlaces-Prefix.pch";
 				INFOPLIST_FILE = "GooglePlaces/GooglePlaces-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c53db53e-bb18-4e35-8474-f05e4ebdc567";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -274,6 +327,7 @@
 				5669C10A154FC64F0092D780 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,15 +9,46 @@
 #import "AppDelegate.h"
 
 @implementation AppDelegate
+AppDelegate* appDelegate = nil;
 
 @synthesize window = _window;
+@synthesize currentlocation;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    appDelegate = self;
+    //Location manager
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    locationManager.pausesLocationUpdatesAutomatically = NO;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    //locationManager.distanceFilter = 1;
+    if([locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]){
+        [locationManager requestWhenInUseAuthorization];
+        [locationManager requestAlwaysAuthorization];
+    }else{
+        [locationManager startUpdatingLocation];
+    }
+
     return YES;
 }
-							
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
+{
+    switch (status) {
+        case kCLAuthorizationStatusNotDetermined:
+        case kCLAuthorizationStatusRestricted:
+        case kCLAuthorizationStatusDenied:
+        {
+            // do some error handling
+        }
+            break;
+        default:{
+            [locationManager startUpdatingLocation];
+        }
+            break;
+    }
+}
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -44,5 +75,22 @@
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+-(void) locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+    
+    self.currentlocation = newLocation;
+    
+    
+    
+    
+}
+-(void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    if([error code] == 1)
+    {
+       
+    }
+}
+
 
 @end
